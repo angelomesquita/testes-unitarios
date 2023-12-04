@@ -1,4 +1,4 @@
-package net.atos;
+package net.atos.ecommerce;
 
 public class Produto {
     private String nome;

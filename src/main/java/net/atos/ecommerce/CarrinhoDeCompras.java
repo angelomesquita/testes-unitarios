@@ -1,4 +1,4 @@
-package net.atos;
+package net.atos.ecommerce;
 
 import java.util.ArrayList;
 
@@ -18,12 +18,14 @@ public class CarrinhoDeCompras {
         if (produtos.isEmpty()) {
             return 0;
         }
+
         double maiorValor = produtos.get(0).getValor();
         for (Produto produto : produtos) {
             if (maiorValor < produto.getValor()) {
                 maiorValor = produto.getValor();
             }
         }
+
         return maiorValor;
     }
 
