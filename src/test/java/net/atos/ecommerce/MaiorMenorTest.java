@@ -17,8 +17,10 @@ public class MaiorMenorTest {
 
     @Test
     public void testComCarrinhoVazio() {
+        // Act
         algoritmo.encontra(carrinho);
 
+        // Assert
         assertNull(algoritmo.getMenor());
         assertNull(algoritmo.getMaior());
     }
